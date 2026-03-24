@@ -18,12 +18,12 @@
 
 ## Performance Manifesto: Zero-Overhead Architecture
 
-### 1. Memory Discipline
+### Memory Discipline
 *   **Pre-allocation at $t=0$**: Zero use of `list.append()` or dynamic resizing to prevent heap fragmentation.
 *   **Contiguity**: Strict `order='C'` or `order='F'` enforcement for Stride-1 sequential access.
 *   **Memory Barriers**: Manual management of object boundaries; **Optimization verified via LLVM IR inspection** to ensure L1/L2 cache locality.
 
-### 2. Kernel Optimization
+### Kernel Optimization
 *   **Type Locking**: Explicit `dtype` signatures to eliminate JIT runtime dispatch.
 *   **Branchless Logic**: Arithmetic masking and conditional moves instead of `if/else` for SIMD-friendly pipelines.
 *   **Interpreter Bypass**: Python acts only as a controller; no Python objects enter the `@njit` scope.
