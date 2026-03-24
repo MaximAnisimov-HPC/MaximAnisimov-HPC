@@ -16,9 +16,9 @@
 *   **Vectorization:** SIMD (AVX-512/AVX2), Stride-1 Access, Branch Elimination.
 *   **Profiling:** `cProfile`, `valgrind`, **LLVM IR Inspection**.
 
-## Performance Manifesto: Zero-Overhead Architecture
+## Performance Optimisation: Zero-Overhead Architecture
 
-### Memory Discipline
+### Memory Optimisation
 *   **Pre-allocation at $t=0$**: Zero use of `list.append()` or dynamic resizing to prevent heap fragmentation.
 *   **Contiguity**: Strict `order='C'` or `order='F'` enforcement for Stride-1 sequential access.
 *   **Memory Barriers**: Manual management of object boundaries; **Optimization verified via LLVM IR inspection** to ensure L1/L2 cache locality.
