@@ -7,7 +7,6 @@
 ![Numba](https://img.shields.io/badge/Numba-0.59+-green)
 ![CUDA](https://img.shields.io/badge/CUDA-12.x-red)
 ![LLVM](https://img.shields.io/badge/LLVM-IR-purple)
-![HPC](https://img.shields.io/badge/HPC-Expert-orange)
 
 > **Philosophy:** Python is a remote control for LLVM kernels. Zero overhead in hot paths.
 
