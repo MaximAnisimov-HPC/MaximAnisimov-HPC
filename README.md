@@ -9,7 +9,7 @@
 ![CUDA](https://img.shields.io/badge/CUDA-12.x-red)
 ![LLVM](https://img.shields.io/badge/LLVM-IR-purple)
 
-> **"Python is a remote control for LLVM kernels. By enforcing strict type locking, pre-allocation, and cache-aware vectorization, I eliminate interpreter overhead in hot paths to achieve C++-level latency using only Python. I architect ultra-low-latency systems where performance is verified at the instruction level. My goal is to transform high-level logic into deterministic, branchless machine code that extracts 100% of the hardware's theoretical throughput."**
+> **"Turning Python into a low-level tool: I use LLVM and strong typing to eliminate interpreter overhead, reaching C++-level latency and 100% hardware utilization."**
 
 ### Low-Level Optimization & ASM Refinement
 *   **JUMP Elimination:** Manual inspection of generated **Assembly (ASM)** to identify and eliminate costly `jmp` (branching) instructions. 
