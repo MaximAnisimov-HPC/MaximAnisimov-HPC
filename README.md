@@ -1,4 +1,4 @@
-# Maxim Anisimov | HPC & Low-Level Python Specialist
+# Maxim Anisimov | HPC & Low-Level Optimisation Specialist
 
 ![Assembly](https://img.shields.io/badge/ASM-x86_64-red)
 ![C++](https://img.shields.io/badge/C%2B%2B-17-blue)
