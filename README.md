@@ -56,12 +56,12 @@ Processing 10M+ market ticks with sub-microsecond latency using a Python-based s
 
 ### Statistical Analysis
 
-| Metric | Measured (at 2.45 GHz) | Projected (at 4.5 GHz) | Architecture Notes |
+| Metric | Result (at 0.55 GHz) | Result (at 4.5 GHz) | Result All Cores(16) (at 4.5 GHz) |
 | :--- | :--- | :--- | :--- |
-| **Min Latency** | **0.55 ns** | **~0.30 ns** | **L1 D-Cache Hit (1.3 Cycles)** |
-| **Avg Latency (Tick-to-Trade)** | **0.68 ns** | **~0.37 ns** | **Super-scalar IPC > 3** |
-| **P99 Latency (Jitter)** | **0.82 ns** | **~0.44 ns** | **Deterministic Jitter-free Path** |
-| **Total Throughput** | **1.46 B txn/sec** | **~2.69 B txn/sec** | **AVX-256 Pipeline Saturation** |
+| **Min Latency** | 8,200 ns | ~1,000 ns | 	0.55 ns |
+| **Avg Latency (Tick-to-Trade)** | **9.27 ns** | **~1.1 ns** | **~0.68 ns** |
+| **P99 Latency (Jitter)** | 17,000 ns | ~1,700 ns | **~0.82 ns** |
+| **Throughput** | 107,834 txn/sec | **~880,000 txn/sec** | **~1.46 B txn/sec** |
 
 
 
