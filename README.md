@@ -17,22 +17,18 @@
 
 ### Low-Level Optimization & ASM Refinement
 * **Asm-Level Surgical Refinement:** Manual elimination of `.LBB` jump labels and branch-heavy logic. I replace `if/else` with bitwise masking and `CMOV` to achieve zero-stall execution.
-* **Extreme SIMD Vectorization:** Overriding compiler heuristics to force **AVX-512 (zmm)** and **AVX2 (ymm)** utilization. I hand-tune **LLVM IR** to ensure high-density **Vector Ops** and 100% compute throughput.
+* **Precision SIMD Orchestration:** Overriding compiler heuristics to force **AVX-512 (zmm)** and **AVX2 (ymm)** utilization. I verify `vmovaps/vaddpd` density via manual **LLVM IR** tuning to ensure 8–32 FLOPs per cycle and **100% hardware saturation**
 * **Cache-Aware Determinism:** Architecting hot paths with pre-allocation and strict type locking to bypass the Python interpreter and hit raw **C++ hardware latency**.
 * **Instruction Audit:** Continuous verification of **IPC (Instructions Per Cycle)** to guarantee that every clock cycle is spent on computation, not overhead.
 
 
-## Performance Optimisation: Zero-Overhead Architecture
+### Hardware-Centric Memory Architecture
+* **Deterministic Runtime:** 100% pre-allocation at $t=0$. I eliminate heap fragmentation and **GC jitter** by enforcing zero-dynamic-resizing policies.
+* **L1/L2 Cache Engineering:** Strict `Stride-1` access patterns and manual **64-byte padding** to neutralize **False Sharing** and optimize cache-line utilization.
+* **Layout Enforcement:** Explicit memory contiguity (C/Fortran order) verified via **LLVM IR metadata** for deterministic data movement.
+* **Type-Locked Pipelines:** Zero JIT runtime dispatch through strict `dtype` signatures and explicit **Interpreter Bypass** (no Python objects in `@njit` scopes).
+* **Branchless Micro-Ops:** Transforming logic into SIMD-friendly arithmetic masking to maximize **IPC** and prevent pipeline stalls.
 
-### Memory Optimisation
-*   **Pre-allocation at $t=0$**: Zero use of `list.append()` or dynamic resizing to prevent heap fragmentation.
-*   **Contiguity**: Strict `order='C'` or `order='F'` enforcement for Stride-1 sequential access.
-*   **Memory Barriers**: Manual management of object boundaries; **Optimization verified via LLVM IR inspection** to ensure L1/L2 cache locality.
-
-### Kernel Optimization
-*   **Type Locking**: Explicit `dtype` signatures to eliminate JIT runtime dispatch.
-*   **Branchless Logic**: Arithmetic masking and conditional moves instead of `if/else` for SIMD-friendly pipelines.
-*   **Interpreter Bypass**: Python acts only as a controller; no Python objects enter the `@njit` scope.
 
 ### Performance Credentials
 *   [Scientific Computing with Python](https://freecodecamp.org/certification/maximanisimov/python-v9) | freeCodeCamp
