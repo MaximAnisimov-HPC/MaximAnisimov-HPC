@@ -55,7 +55,7 @@ Processing 10M+ market ticks with sub-microsecond latency using a Python-based s
 
 > **Core Achievement:** Architected a zero-overhead data pipeline by transforming high-level logic into deterministic **AVX-512 machine code**, reaching 98.4% of theoretical hardware throughput.
 
-### 📜 Professional Foundations & Certifications
+### Professional Foundations & Certifications
 * [ASM Developer Certificate](https://freecodecamp.org](https://www.freecodecamp.org/certification/maximanisimov/python-v9))
 * [C++ Developer Certificate](https://freecodecamp.org](https://www.freecodecamp.org/certification/maximanisimov/python-v9))
 * [C# Developer Certificate](https://freecodecamp.org](https://www.freecodecamp.org/certification/maximanisimov/python-v9))
