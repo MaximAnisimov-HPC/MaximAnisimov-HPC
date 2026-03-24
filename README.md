@@ -11,7 +11,7 @@
 > Python is a remote control for LLVM kernels. Zero overhead in hot paths.
 
 ## Low Level Technical Stack (Strictly Typed & Pre-allocated)
-*   **Compute:** Numba (`@njit`, `@parallel`), NumPy (**Structured Arrays**, DType Packing), CUDA.
+*   **Compute:** I used np.empty with a custom allocator to ensure 64-byte alignment for AVX-512 registers on Zen 4, avoiding unaligned load penalties. Numba (`@njit`, `@parallel`), NumPy (**Structured Arrays**, DType Packing), CUDA.
 *   **Memory:** `ctypes`, `np.memmap`, Cache Line Alignment (64-byte padding).
 *   **Vectorization:** SIMD (AVX-512/AVX2), Stride-1 Access, Branch Elimination.
 *   **Profiling:** `cProfile`, `valgrind`, **LLVM IR Inspection**.
