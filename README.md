@@ -47,11 +47,14 @@ Processing 10M+ market ticks with sub-microsecond latency using a Python-based s
 
 ### Benchmark Results
 
-| Implementation | Latency (per 1M rows) | Throughput |
-| :--- | :--- | :--- |
-| Pandas & Numpy | 480.0 ms | Baseline |
-| Numba (default) | 12.5 ms | 38x |
-| **My ASM-Optimized Kernel** | **0.14 ms** | **3990x** |
+| Implementation | Latency (per 1M rows) | Throughput | Metric | Result (at 0.55 GHz) | Projected (at 4.5 GHz) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Pandas & Numpy | 480.0 ms | Baseline | **Min Latency** | 8,200 ns | ~1,000 ns |
+| Numba (default) | 12.5 ms | 38x | **Avg Latency (Tick-to-Trade)** | **9.27 µs** | **~1.1 µs** |
+| **My ASM-Optimized Kernel** | **0.14 ms** | **3990x** | **Throughput** | 107,834 txn/sec | **~880,000 txn/sec** |
+
+
+
 
 > **Core Achievement:** Architected a zero-overhead data pipeline by transforming high-level logic into deterministic **AVX-512 machine code**, reaching 98.4% of theoretical hardware throughput.
 
