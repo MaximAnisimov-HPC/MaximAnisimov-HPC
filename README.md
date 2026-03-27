@@ -72,7 +72,7 @@ Processing 1M+ market ticks with sub-microsecond latency using a Python-based st
 ### Professional Foundations & Certifications
 * [ASM Developer Certificate](https://freecodecamp.org](https://www.freecodecamp.org/certification/maximanisimov/python-v9))
 * [C++ Developer Certificate](https://www.sololearn.com/certificates/CC-UBOEBCFT)
-* [C Developer Certificate](https://freecodecamp.org](https://www.freecodecamp.org/certification/maximanisimov/python-v9))
+* [C Developer Certificate](https://www.sololearn.com/certificates/CC-UBOEBCFT)
 * [C# Developer Certificate](https://freecodecamp.org](https://www.freecodecamp.org/certification/maximanisimov/python-v9))
 * [Python Developer Certificate](https://freecodecamp.org](https://www.freecodecamp.org/certification/maximanisimov/python-v9))
 
