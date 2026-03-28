@@ -7,7 +7,7 @@
 ![CUDA](https://img.shields.io/badge/CUDA-12.x-red)
 ![LLVM](https://img.shields.io/badge/LLVM-IR-purple)
 ![C++](https://img.shields.io/badge/C%2B%2B-17-blue)
-![C#](https://img.shields.io/badge/C%23-10-blue)
+![C#](https://img.shields.io/badge/C%23-777BB4?)
 ![NumPy](https://img.shields.io/badge/NumPy-1.26+-blue)
 ![Numba](https://img.shields.io/badge/Numba-0.59+-blue)
 
@@ -73,7 +73,7 @@ Processing 1M+ market ticks with sub-microsecond latency using a Python-based st
 * [ASM Developer Certificate](https://freecodecamp.org](https://www.freecodecamp.org/certification/maximanisimov/python-v9))
 * [C++ Developer Certificate](https://www.sololearn.com/certificates/CC-EDVFFIIN)
 * [C Developer Certificate](https://www.sololearn.com/certificates/CC-UBOEBCFT)
-* ![C#](https://img.shields.io/badge/C%23-777BB4?)
-* [![Microsoft Certified]](https://freecodecamp.org/certification/maximanisimov/foundational-c-sharp-with-microsoft)
+* ![C#](https://img.shields.io/badge/C%23-10-blue)
+* [Microsoft Certified](https://freecodecamp.org/certification/maximanisimov/foundational-c-sharp-with-microsoft)
 * [Python Developer Certificate](https://www.freecodecamp.org/certification/maximanisimov/python-v9)
 
