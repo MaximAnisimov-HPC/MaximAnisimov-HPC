@@ -76,10 +76,10 @@ Processing 1M+ market ticks with sub-microsecond latency using a Python-based st
 * [C++ Intermediate](https://www.sololearn.com/certificates/CC-LGYPGAOT)
 * [C++ Introduction](https://www.sololearn.com/certificates/CC-EDVFFIIN)
 * [C Developer Certificate](https://www.sololearn.com/certificates/CC-UBOEBCFT)
-* [C Fundamental Series (2x)](link)
-* [C Fundamental Series (2x)](link)
+* [C Fundamental Series](link)
+* [C Driver Development](link)
 
-#### Data Architecture & SQL (7 Certs)
+#### Data Architecture & SQL
 * [SQL Advanced Optimization](link)
 * [SQL Database Design](link)
 * [SQL Architecture](link)
